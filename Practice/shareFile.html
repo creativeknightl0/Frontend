@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>File Shared with You - DE-IDEN</title>
+    </head>
+    <body style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333333; background-color: #f7fafc;">
+        <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); overflow: hidden;">
+            <!-- Header -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #000000; padding: 20px;">
+                <tr>
+                    <!-- Logo + Brand + Divider -->
+                    <td valign="middle" align="left" style="white-space: nowrap;">
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td valign="middle" style="padding-right: 4px;">
+                                    <img src="https://de-iden.com/de-iden-tab-1.png" 
+                                        alt="email logo" 
+                                        width="48" height="48" 
+                                        style="display: block;">
+                                </td>
+                                <td valign="middle" style="font-size: 1.5rem; font-weight: bold; color: white; padding-right: 20px;">
+                                    <span style="color: #E00B41;">DE</span>-IDEN
+                                </td>
+                                <!-- Divider right next to brand -->
+                                <td valign="middle" style="padding: 0 20px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" height="50">
+                                        <tr>
+                                            <td style="border-left: 1px solid #333;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <!-- File Sharing title taking remaining space -->
+                    <td valign="middle" align="center" style="color: white; font-size: 18px; font-weight: 600; width: 100%;">
+                        File Sharing
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Main Content -->
+            <div style="padding: 40px 32px;">
+                <div>
+                    <h1 style="font-size: 28px; font-weight: 700; color: #000000; margin-bottom: 24px; text-align: center;">A File Has Been Shared With You</h1>
+                    
+                    <p style="font-size: 18px; margin-bottom: 20px; color: #000000;">Hi there,</p>
+                    
+                    <p style="font-size: 16px; margin-bottom: 32px; color: #555555; line-height: 1.7;">
+                        <strong>{sender_name}</strong> has securely shared a file with you through DE-IDEN. 
+                        The file has been encrypted and sent for decrypting it.
+                    </p>
+
+                    <!-- File Info Banner -->
+                    <div style="background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%); border: 2px solid #2196F3; border-radius: 15px; padding: 20px; margin: 32px 0; text-align: center;">
+                        <div style="font-size: 36px; margin-bottom: 12px;">📄</div>
+                        <div style="font-size: 18px; font-weight: 600; color: #1565C0; margin-bottom: 8px;">{file_name}</div>
+                        <div style="font-size: 14px; color: #0D47A1;">Securely shared via DE-IDEN</div>
+                    </div>
+
+                    <!-- File Details Box -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border: 2px solid #000000; border-radius: 15px; margin: 32px 0;">
+                        <tr>
+                            <td style="padding: 28px;">
+                                <h3 style="font-size: 18px; font-weight: 600; color: #000000; margin: 0 0 20px 0; padding-bottom: 8px; border-bottom: 3px solid #000000;">
+                                    File Details
+                                </h3>
+                            
+                                <!-- Detail Rows -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-weight: 600; color: #555555; width: 50%;">File Name:</td>
+                                                    <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{original_filename}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-weight: 600; color: #555555; width: 50%;">Shared By:</td>
+                                                    <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{sender_email}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-weight: 600; color: #555555; width: 50%;">Shared On:</td>
+                                                    <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{shared_date}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-weight: 600; color: #555555; width: 50%;">File Type:</td>
+                                                    <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{file_type}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 14px 0;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                <tr>
+                                                    <td style="font-weight: 600; color: #555555; width: 50%;">Access Expires:</td>
+                                                    <td style="color: #E00B41; font-weight: 700; text-align: right; width: 50%;">{expiry_date}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Encryption Key Section -->
+                    <div style="margin: 32px 0; padding: 24px; background-color: #FFF3E0; border-radius: 15px; border: 2px solid #FF9800; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                        <h3 style="font-size: 18px; font-weight: 600; color: #E65100; margin-bottom: 16px;">🔑 Important: Copy or Save Your Encryption Key</h3>
+                        <p style="color: #BF360C; margin-bottom: 16px; line-height: 1.6;">
+                            You'll need this encryption key to decrypt the file. Please save it securely:
+                        </p>
+                        <div style="background-color: #F5F5F5; border: 1px solid #BDBDBD; border-radius: 8px; padding: 16px; font-family: monospace; font-size: 14px; word-break: break-all; color: #333;">
+                            {encryption_key}
+                        </div>
+                        <p style="color: #D84315; margin-top: 16px; margin-bottom: 0; font-size: 13px; line-height: 1.4;">
+                            ⚠️ This key will not be sent again. Make sure to copy and save it before decrypting the file.
+                        </p>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <div style="text-align: center; margin: 40px 0;">
+                        <a href="{invitation_link}" style="display: inline-block; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; margin: 0 8px 12px 0; background-color: #000000; color: white; border: 2px solid #000000;">Decrypt File</a>
+                        <a href="https://de-iden.com/landing-page" style="display: inline-block; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; margin: 0 8px 12px 0; background-color: transparent; color: #000000; border: 2px solid #000000;">Learn About DE-IDEN</a>
+                    </div>
+
+                    <!-- Support section -->
+                    <div style="margin: 32px 0; padding: 24px; background-color: #ffffff; border-radius: 15px; border: 2px solid #000000; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                        <h3 style="font-size: 18px; font-weight: 600; color: #000000; margin-bottom: 16px;">Need Help?</h3>
+                        <p style="color: #555555; margin-bottom: 0; line-height: 1.6;">
+                            If you have any questions about this shared file or need assistance accessing it, 
+                            please contact our support team at 
+                            <a href="mailto:info@cloudxcel.co.uk" style="color: #000000; text-decoration: none; font-weight: 600;">info@cloudxcel.co.uk</a> 
+                            or visit our <a href="https://de-iden.com/help" style="color: #000000; text-decoration: none; font-weight: 600;">Help Center</a>.
+                        </p>
+                    </div>
+
+                    <p style="font-size: 16px; color: #555555; margin: 32px 0 24px 0; line-height: 1.7;">
+                        Thank you for using DE-IDEN for secure file sharing. Your privacy is our priority.
+                    </p>
+
+                    <p style="font-size: 16px; color: #000000; margin-bottom: 0; font-weight: 500;">
+                        Best regards,<br>
+                        <strong>Cloudxcel Team</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div style="background-color: #f7f7f7; padding: 32px 24px; text-align: center; border-top: 1px solid #dddddd;">
+                <div style="max-width: 500px; margin: 0 auto;">
+                    <p style="font-size: 14px; color: #888888; margin-bottom: 16px; line-height: 1.5;">
+                        This file was shared with you through DE-IDEN's secure sharing platform. 
+                        If you didn't expect this file, please contact the sender directly.
+                    </p>
+                    <div style="margin-bottom: 16px;">
+                        <a href="https://de-iden.com/privacy-statement" style="color: #555555; text-decoration: none; font-size: 14px; font-weight: 500;">Privacy Statement</a>
+                        <span style="color: #cccccc; margin: 0 12px;">|</span>
+                        <a href="mailto:info@cloudxcel.co.uk" style="color: #555555; text-decoration: none; font-size: 14px; font-weight: 500;">Contact Us</a>
+                    </div>
+                    <p style="font-size: 12px; color: #aaaaaa; margin-bottom: 0; line-height: 1.5;">
+                        © 2025 Cloudxcel. All rights reserved.<br>
+                        DE-IDEN - Your trusted partner in data privacy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

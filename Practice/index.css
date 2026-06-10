@@ -1,0 +1,76 @@
+body {
+    background-color: brown;
+}
+
+.poster-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster-img .heading {
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    font-weight: 800;
+}
+
+.poster-img-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: black;
+}
+
+.poster-img-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 2rem;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.poster-img img {
+    width: 500px;
+    height: 75vh;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: black;
+}
+
+/* Pseudo Classes */
+
+/* .poster-img img:hover {
+    background-color: aqua;
+} */
+
+.poster-img img:active {
+    background-color: aqua;
+}
+
+.poster-img-2 input:checked {
+    border: none;
+    outline: 2px solid salmon;
+}
+
+.poster-img-2 p:nth-of-type(4n) {
+    color: red;
+}
+
+/* Pseudo Elements */
+
+.poster-img-2 p::first-letter {
+    color: yellow;
+}
+
+.poster-img-2 p::selection {
+    color: azure;
+}

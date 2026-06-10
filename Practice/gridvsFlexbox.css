@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px;
+}
+
+.one, 
+.two, 
+.three,
+.four,
+.five,
+.six,
+.seven {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container > * {
+    flex-grow: 1;
+    flex-basis: 33%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(200px, 1fr));
+}

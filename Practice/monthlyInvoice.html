@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Invoice - DE-IDEN</title>
+</head>
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333333; background-color: #f7fafc;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); overflow: hidden;">
+        <!-- Header -->
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background: linear-gradient(135deg, #000000 0%, #333333 100%); padding: 30px 20px;">
+            <tr>
+                <td valign="middle" align="center">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td valign="middle" style="padding-right: 15px;">
+                                <img src="https://de-iden.com/de-iden-tab-1.png" 
+                                    alt="DE-IDEN logo" 
+                                    width="60" height="60" 
+                                    style="display: block;">
+                            </td>
+                            <td valign="middle">
+                                <div style="font-size: 2rem; font-weight: bold; color: white;">
+                                    <span style="color: #E00B41;">DE</span>-IDEN
+                                </div>
+                                <div style="font-size: 14px; color: #CCCCCC; margin-top: 5px;">
+                                    Monthly Invoice
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Main Content -->
+        <div style="padding: 40px 32px;">
+            <!-- Invoice Header -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <div style="font-size: 48px; margin-bottom: 20px;">🧾</div>
+                <h1 style="font-size: 28px; font-weight: 700; color: #000000; margin-bottom: 16px;">Monthly Invoice</h1>
+                <p style="font-size: 18px; color: #555555; margin-bottom: 0;">Thank you for your subscription to DE-IDEN {plan_type.title()}!</p>
+            </div>
+
+            <!-- Payment Success Banner -->
+            <div style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%); border: 2px solid #4CAF50; border-radius: 15px; padding: 20px; margin: 32px 0; text-align: center;">
+                <div style="font-size: 18px; font-weight: 600; color: #2E7D32; margin-bottom: 8px;">✅ Payment Successful</div>
+                <div style="font-size: 14px; color: #1B5E20;">Your payment of {amount_paid} has been processed successfully</div>
+            </div>
+
+            <!-- Invoice Details Box -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border: 2px solid #2196F3; border-radius: 15px; margin: 32px 0;">
+                <tr>
+                    <td style="padding: 28px;">
+                        <h3 style="font-size: 18px; font-weight: 600; color: #1565C0; margin: 0 0 20px 0; padding-bottom: 8px; border-bottom: 3px solid #2196F3;">
+                            📋 Invoice Details
+                        </h3>
+                        
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="font-weight: 600; color: #555555; width: 50%;">Invoice #:</td>
+                                            <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{invoice_number}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="font-weight: 600; color: #555555; width: 50%;">Invoice Date:</td>
+                                            <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{invoice_date}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="font-weight: 600; color: #555555; width: 50%;">Billing Period:</td>
+                                            <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{period_start} - {period_end}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 14px 0;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="font-weight: 600; color: #555555; width: 50%;">Payment Status:</td>
+                                            <td style="color: #2E7D32; font-weight: 700; text-align: right; width: 50%;">✅ PAID</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Billing Breakdown -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border: 2px solid #000000; border-radius: 15px; margin: 32px 0;">
+                <tr>
+                    <td style="padding: 28px;">
+                        <h3 style="font-size: 18px; font-weight: 600; color: #000000; margin: 0 0 20px 0; padding-bottom: 8px; border-bottom: 3px solid #000000;">
+                            💰 Billing Breakdown
+                        </h3>
+                        
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td style="padding: 12px 0; border-bottom: 1px solid #f1f1f1;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="color: #555555; width: 70%;">DE-IDEN {plan_type.title()} Plan</td>
+                                            <td style="color: #000000; font-weight: 600; text-align: right; width: 30%;">{plan_info['price']}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px 0; border-bottom: 1px solid #f1f1f1;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="color: #555555; width: 70%;">Subtotal:</td>
+                                            <td style="color: #000000; font-weight: 600; text-align: right; width: 30%;">{subtotal}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="display: {'none' if tax_amount == '$0.00' else 'table-row'};">
+                                <td style="padding: 12px 0; border-bottom: 1px solid #f1f1f1;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="color: #555555; width: 70%;">Tax:</td>
+                                            <td style="color: #000000; font-weight: 600; text-align: right; width: 30%;">{tax_amount}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 16px 0; border-top: 2px solid #000000;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="color: #000000; font-weight: 700; font-size: 18px; width: 70%;">Total Paid:</td>
+                                            <td style="color: #2E7D32; font-weight: 700; font-size: 20px; text-align: right; width: 30%;">{amount_paid}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Next Billing Info -->
+            <div style="background-color: #E3F2FD; border: 2px solid #2196F3; border-radius: 15px; padding: 20px; margin: 32px 0; text-align: center;">
+                <h4 style="color: #1565C0; margin: 0 0 12px 0;">📅 Next Billing Information</h4>
+                <p style="color: #0D47A1; margin: 0; font-size: 16px; font-weight: 600;">
+                    Your next billing date: <strong>{next_billing}</strong>
+                </p>
+                <p style="color: #1976D2; margin: 8px 0 0 0; font-size: 14px;">
+                    Amount: {plan_info['price']} | Your {plan_info['tokens']} tokens will reset on this date
+                </p>
+            </div>
+
+            <!-- Account Management -->
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="https://de-iden.com/account-page" style="display: inline-block; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; margin: 0 8px 12px 0; background-color: #000000; color: white; border: 2px solid #000000;">Manage Account</a>
+                <a href="https://de-iden.com/main-page" style="display: inline-block; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; margin: 0 8px 12px 0; background-color: transparent; color: #000000; border: 2px solid #000000;">Continue Using DE-IDEN</a>
+            </div>
+
+            <!-- Support Section -->
+            <div style="margin: 32px 0; padding: 24px; background-color: #ffffff; border-radius: 15px; border: 2px solid #000000; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 18px; font-weight: 600; color: #000000; margin-bottom: 16px;">Questions About Your Invoice?</h3>
+                <p style="color: #555555; margin-bottom: 16px; line-height: 1.6;">
+                    If you have any questions about this invoice or need assistance with your account, we're here to help:
+                </p>
+                <ul style="color: #555555; margin: 0; padding-left: 20px;">
+                    <li style="padding: 4px 0;">📧 Email: <a href="mailto:info@cloudxcel.co.uk" style="color: #000000; text-decoration: none; font-weight: 600;">info@cloudxcel.co.uk</a></li>
+                    <li style="padding: 4px 0;">💬 Support: <a href="https://de-iden.com/help" style="color: #000000; text-decoration: none; font-weight: 600;">Help Center</a></li>
+                    <li style="padding: 4px 0;">🔧 Account: <a href="https://de-iden.com/account-page" style="color: #000000; text-decoration: none; font-weight: 600;">Manage Subscription</a></li>
+                </ul>
+            </div>
+
+            <p style="font-size: 16px; color: #555555; margin: 32px 0 24px 0; line-height: 1.7;">
+                Thank you for choosing DE-IDEN to protect your sensitive data. We appreciate your trust and business.
+            </p>
+
+            <p style="font-size: 16px; color: #000000; margin-bottom: 0; font-weight: 500;">
+                Best regards,<br>
+                <strong>Cloudxcel Team</strong>
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div style="background-color: #f7f7f7; padding: 32px 24px; text-align: center; border-top: 1px solid #dddddd;">
+            <div style="max-width: 500px; margin: 0 auto;">
+                <p style="font-size: 14px; color: #888888; margin-bottom: 16px; line-height: 1.5;">
+                    This invoice was automatically generated for your DE-IDEN {plan_type.title()} subscription.
+                </p>
+                <div style="margin-bottom: 16px;">
+                    <a href="https://de-iden.com/privacy-statement" style="color: #555555; text-decoration: none; font-size: 14px; font-weight: 500;">Privacy Statement</a>
+                    <span style="color: #cccccc; margin: 0 12px;">|</span>
+                    <a href="mailto:info@cloudxcel.co.uk" style="color: #555555; text-decoration: none; font-size: 14px; font-weight: 500;">Contact Us</a>
+                    <span style="color: #cccccc; margin: 0 12px;">|</span>
+                    <a href="https://de-iden.com/account-page" style="color: #555555; text-decoration: none; font-size: 14px; font-weight: 500;">Manage Subscription</a>
+                </div>
+                <p style="font-size: 12px; color: #aaaaaa; margin-bottom: 0; line-height: 1.5;">
+                    © 2025 Cloudxcel. All rights reserved.<br>
+                    DE-IDEN - Your trusted partner in data privacy
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

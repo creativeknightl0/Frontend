@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial Ending Soon - DE-IDEN</title>
+</head>
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333333; background-color: #f7fafc;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); overflow: hidden;">
+        <!-- Header -->
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #000000; padding: 20px;">
+            <tr>
+                <!-- Logo + Brand + Divider -->
+                <td valign="middle" align="left" style="white-space: nowrap;">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td valign="middle" style="padding-right: 4px;">
+                                <img src="https://de-iden.com/de-iden-tab-1.png" 
+                                    alt="email logo" 
+                                    width="48" height="48" 
+                                    style="display: block;">
+                            </td>
+                            <td valign="middle" style="font-size: 1.5rem; font-weight: bold; color: white; padding-right: 20px;">
+                                <span style="color: #E00B41;">DE</span>-IDEN
+                            </td>
+                            <!-- Divider right next to brand -->
+                            <td valign="middle" style="padding: 0 20px;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" height="50">
+                                    <tr>
+                                        <td style="border-left: 1px solid #333;"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- Trial Reminder taking remaining space -->
+                <td valign="middle" align="center" style="color: white; font-size: 18px; font-weight: 600; width: 100%;">
+                    Trial Reminder
+                </td>
+            </tr>
+        </table>
+
+        <!-- Main Content -->
+        <div style="padding: 40px 32px;">
+            <div>
+                <h1 style="font-size: 28px; font-weight: 700; color: #000000; margin-bottom: 24px; text-align: center;">Your {plan_type.title()} Plan Trial is Ending Soon</h1>
+                
+                <p style="font-size: 18px; margin-bottom: 20px; color: #000000;">Hi there,</p>
+                
+                <p style="font-size: 16px; margin-bottom: 32px; color: #555555; line-height: 1.7;">
+                    We hope you're enjoying your {plan_type.title()} plan trial! This is a friendly reminder that your trial period 
+                    is coming to an end soon.
+                </p>
+
+                <!-- Warning Banner -->
+                <div style="background: linear-gradient(135deg, #FFF4E5 0%, #FFE0B2 100%); border: 2px solid #FF9800; border-radius: 15px; padding: 20px; margin: 32px 0; text-align: center;">
+                    <div style="font-size: 36px; margin-bottom: 12px;">⏰</div>
+                    <div style="font-size: 18px; font-weight: 600; color: #E65100; margin-bottom: 8px;">Trial ends in 3 days</div>
+                    <div style="font-size: 14px; color: #BF360C;">After this, regular billing will begin automatically</div>
+                </div>
+
+                <!-- Trial Details Box -->
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; border: 2px solid #000000; border-radius: 15px; margin: 32px 0;">
+                    <tr>
+                        <td style="padding: 28px;">
+                            <h3 style="font-size: 18px; font-weight: 600; color: #000000; margin: 0 0 20px 0; padding-bottom: 8px; border-bottom: 3px solid #000000;">
+                                Trial Details
+                            </h3>
+                                        
+                            <!-- Detail Rows -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-weight: 600; color: #555555; width: 50%;">Plan:</td>
+                                                <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{plan_type.title()} Plan</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-weight: 600; color: #555555; width: 50%;">Trial Ends:</td>
+                                                <td style="color: #E00B41; font-size: 18px; font-weight: 700; text-align: right; width: 50%;">{formatted_datetime}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 14px 0; border-bottom: 1px solid #f1f1f1;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-weight: 600; color: #555555; width: 50%;">Monthly Price After Trial:</td>
+                                                <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">${'15.00' if plan_type == 'plus' else '30.00'}/month</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 14px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-weight: 600; color: #555555; width: 50%;">Subscription ID:</td>
+                                                <td style="color: #000000; font-weight: 600; text-align: right; width: 50%;">{subscription_id}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- What happens next section -->
+                <div style="margin: 32px 0; background-color: #f8f9fa; border-left: 4px solid #000000; padding: 24px; border-radius: 15px; border: 1px solid #e0e0e0;">
+                    <h3 style="font-size: 18px; font-weight: 600; color: #000000; margin-bottom: 16px;">What happens when your trial ends?</h3>
+                    <ul style="padding: 0; margin: 0;">
+                        <li style="padding: 10px 0; color: #555555; position: relative; margin-left: 20px; line-height: 1.6;">
+                            Your trial will automatically convert to a paid {plan_type.title()} subscription
+                        </li>
+                        <li style="padding: 10px 0; color: #555555; position: relative; margin-left: 20px; line-height: 1.6;">
+                            You'll be charged the regular monthly rate on {formatted_date}
+                        </li>
+                        <li style="padding: 10px 0; color: #555555; position: relative; margin-left: 20px; line-height: 1.6;">
+                            Your payment method on file will be charged automatically
+                        </li>
+                        <li style="padding: 10px 0; color: #555555; position: relative; margin-left: 20px; line-height: 1.6;">
+                            Billing will continue monthly on the same day each month
+                        </li>
+                        <li style="padding: 10px 0; color: #555555; position: relative; margin-left: 20px; line-height: 1.6;">
+                            You can cancel anytime before the trial ends to avoid charges
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Action Buttons -->
+                <div style="text-align: center; margin: 40px 0;">
+                    <a href="https://de-iden.com/account-page" style="display: inline-block; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; margin: 0 8px 12px 0; background-color: #000000; color: white; border: 2px solid #000000;">Manage Subscription</a>
+                    <a href="https://de-iden.com/upgrade" style="display: inline-block; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; margin: 0 8px 12px 0; background-color: transparent; color: #000000; border: 2px solid #000000;">View Plan Details</a>
+                </div>
+
+                <!-- Support section -->
+                <div style="margin: 32px 0; padding: 24px; background-color: #ffffff; border-radius: 15px; border: 2px solid #000000; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+                    <h3 style="font-size: 18px; font-weight: 600; color: #000000; margin-bottom: 16px;">Need to make changes?</h3>
+                    <p style="color: #555555; margin-bottom: 0; line-height: 1.6;">
+                        You can cancel or modify your subscription anytime by logging into your account. 
+                        If you have any questions, our support team is here to help at 
+                        <a href="mailto:info@cloudxcel.co.uk" style="color: #000000; text-decoration: none; font-weight: 600;">info@cloudxcel.co.uk</a>.
+                    </p>
+                </div>
+
+                <p style="font-size: 16px; color: #555555; margin: 32px 0 24px 0; line-height: 1.7;">
+                    Thank you for trying DE-IDEN! We're excited to continue supporting your data privacy needs.
+                </p>
+
+                <p style="font-size: 16px; color: #000000; margin-bottom: 0; font-weight: 500;">
+                    Best regards,<br>
+                    <strong>Cloudxcel Team</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background-color: #f7f7f7; padding: 32px 24px; text-align: center; border-top: 1px solid #dddddd;">
+            <div style="max-width: 500px; margin: 0 auto;">
+                <p style="font-size: 14px; color: #888888; margin-bottom: 16px; line-height: 1.5;">
+                    This is an automated reminder about your trial ending. You received this email because you have an active trial with DE-IDEN.
+                </p>
+                <div style="margin-bottom: 16px;">
+                    <a href="https://de-iden.com/privacy-statement" style="color: #555555; text-decoration: none; font-size: 14px; font-weight: 500;">Privacy Statement</a>
+                    <span style="color: #cccccc; margin: 0 12px;">|</span>
+                    <a href="mailto:info@cloudxcel.co.uk" style="color: #555555; text-decoration: none; font-size: 14px; font-weight: 500;">Contact Us</a>
+                </div>
+                <p style="font-size: 12px; color: #aaaaaa; margin-bottom: 0; line-height: 1.5;">
+                    © 2025 Cloudxcel. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

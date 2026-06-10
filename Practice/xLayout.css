@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 1440px;
+    margin: 0px 100px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+}
+
+.profileDetails img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profilePic,
+.profilePic1,
+.profilePic2,
+.profilePic3 {
+    height: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.leftSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.btnElements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 20px;
+}
+
+.logo,
+.home,
+.explore,
+.notifications,
+.messages,
+.ai,
+.bookmarks,
+.jobs,
+.communities,
+.premium,
+.verifiedOrg,
+.profile,
+.more,
+.post,
+.profileDetails {
+    padding: 8px 8px;
+}
+
+.home:hover,
+.explore:hover,
+.notifications:hover,
+.messages:hover,
+.ai:hover,
+.bookmarks:hover,
+.jobs:hover,
+.communities:hover,
+.premium:hover,
+.verifiedOrg:hover,
+.profile:hover,
+.more:hover,
+.profileDetails:hover {
+    background-color: grey;
+    border-radius: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+}
+
+.logo:hover {
+    width: 40px;
+    background-color: grey;
+    border-radius: 24px;
+}
+
+.post {
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: 150px;
+}
+
+.profileDetails {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 16px;
+}
+
+.profileDetails:hover {
+    width: 250px;
+    background-color: lightgray;
+    border-radius: 24px;
+}
+
+.profileDetails .handle {
+    color: lightslategrey;
+}
+
+.mainContent {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    padding: 20px;
+}

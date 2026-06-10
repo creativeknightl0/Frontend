@@ -1,0 +1,39 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.header{
+    text-align: center;
+}
+
+
+.topContent .inputs{
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.middleContent{
+
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.bottomContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.signinbtn{
+    display: flex;
+}

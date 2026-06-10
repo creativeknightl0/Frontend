@@ -1,0 +1,7 @@
+.elements {
+    display: inline-block;
+}
+
+.elements .one {
+    display: inline-block;
+}

@@ -1,0 +1,18 @@
+h2{
+    color: #103769;
+    background-color: rgb(9,241,185);    /*takes full space border*/
+}
+
+button{
+    color: magenta;
+    background-color: aqua;
+}
+
+p{
+    color: olive;
+    background: pink;
+}
+
+body{
+    background-color: #cc55ee;
+}

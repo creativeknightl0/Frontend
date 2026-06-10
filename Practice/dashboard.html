@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Professional Layout</title>
+</head>
+<body class="h-screen flex flex-col">
+
+  <!-- Top Navbar -->
+  <header class="bg-blue-600 text-white h-16 flex items-center px-6 shadow-md">
+    <div class="text-xl font-bold">MyCompany</div>
+    <nav class="ml-auto space-x-4">
+      <a href="#" class="hover:text-gray-200">Home</a>
+      <a href="#" class="hover:text-gray-200">About</a>
+      <a href="#" class="hover:text-gray-200">Services</a>
+      <a href="#" class="hover:text-gray-200">Contact</a>
+    </nav>
+  </header>
+
+  <div class="flex flex-1 overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside class="bg-gray-100 w-64 p-6 border-r overflow-y-auto">
+      <ul class="space-y-4">
+        <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-200">Dashboard</a></li>
+        <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-200">Projects</a></li>
+        <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-200">Teams</a></li>
+        <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-200">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 overflow-y-auto">
+      <h1 class="text-3xl font-bold mb-4">Dashboard</h1>
+      <p class="text-gray-700 mb-6">
+        Welcome to your professional dashboard. Use the sidebar to navigate between sections.
+      </p>
+
+      <!-- Example cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="font-semibold text-lg">Card 1</h2>
+          <p class="text-gray-600 mt-2">Some description or content here.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="font-semibold text-lg">Card 2</h2>
+          <p class="text-gray-600 mt-2">Some description or content here.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <h2 class="font-semibold text-lg">Card 3</h2>
+          <p class="text-gray-600 mt-2">Some description or content here.</p>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
